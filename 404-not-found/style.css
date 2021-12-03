@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding: 40px 119px 349px 77px;
+    /* box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+}
+
+h2 {
+    /* position: absolute; */
+    /* width: 133px;
+    height: 25px; */
+    /* left: 77px; */
+    /* top: 40px; */
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-header {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 539.22px;
+    height: 447.43px;
+}
+
+.message {
+    width: 450px;
+}
+
+.message h1 {
+    font-family: 'Space Mono';
+    font-size: 46px;
+    line-height: 95px;
+    font-weight: bold;
+    color: #333;
+}
+
+.message p {
+    width: 320px;
+    font-family: 'Space Mono';
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #4f4f4f;
+    margin-top: 36px;
+}
+
+.btn {
+    border: none;
+    background: #333333;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    outline: 2px solid #008cba;
+}
+
+.btn span:hover {
+    text-decoration: underline;
+    text-decoration-color: #008cba;
+    border: none;
+}
