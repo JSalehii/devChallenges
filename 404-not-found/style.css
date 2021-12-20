@@ -66,11 +66,12 @@
     .error {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2.5rem;
-        align-items: stretch;
+        align-items: center;
     }
 
     .error__img {
         grid-row: 1 / span 3;
+        align-self: stretch;
     }
 
     .error__title {
