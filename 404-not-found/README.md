@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://JSalehii.github.io">
       Demo
     </a>
     <span> | </span>
@@ -29,8 +29,8 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+<!-- - [Contact](#contact)
+- [Acknowledgements](#acknowledgements) -->
 
 <!-- OVERVIEW -->
 
