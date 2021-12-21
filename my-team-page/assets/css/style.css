@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  variables */
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #a9a9a9;
+    --title-font: 'PT Serif';
+    --description-font: 'Poppins';
+    --footer-font: 'Montserrat';
+}
+
+.team {
+    display: grid;
+    row-gap: 2rem;
+    margin: 3rem 2rem;
+}
+
+.team__title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+}
+
+.team__subtitle {
+    font-family: var(--description-font);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+}
+
+.team__description {
+    font-family: var(--description-font);
+    font-size: 1rem;
+    margin-bottom: 6rem;
+}
+
+.team__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    /* row-gap: 2rem */
+}
+
+.team__item {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    margin-bottom: 3rem;
+    column-gap: .5rem;
+    row-gap: 1rem;
+}
+
+.team__item:nth-of-type(odd) {
+    transform: translateY(-70px);
+}
+
+
+.team__img {
+    width: 100%;
+    height: auto;
+    /* grid-column: span 5; */
+}
+
+.img__title {
+    writing-mode: vertical-rl;
+    justify-self: start;
+    font-size: var(--title-font);
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: normal;
+}
+
+.img__name {
+    font-family: var(--description-font);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.footer__title {
+    font-family: var(--footer-font);
+    font-weight: normal;
+    font-size: .9rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.footer__link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 640px) {
+    .team {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team__title {
+        font-size: 2rem;
+    }
+
+    .team__info {
+        grid-column: 2/4;
+        justify-self: center;
+        margin: 0 6rem;
+    }
+
+    .team__content {
+        grid-column: span 3;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team__item:nth-last-child(2) {
+        transform: translateY(70px);
+    }
+
+    .footer {
+        grid-column: span 3;
+        margin-top: 3rem;
+    }
+}
