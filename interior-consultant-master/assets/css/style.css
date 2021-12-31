@@ -83,16 +83,15 @@ img {
 }
 
 .header__modal {
-    position: absolute;
+    position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     width: 100%;
+    height: 0;
     z-index: 100;
     background-color: var(--dark-color);
-    /* visibility: hidden; */
-    display: none;
     transition: .4s;
+    overflow-y: hidden;
 }
 
 .navbar {
@@ -105,7 +104,6 @@ img {
 
 .navbar__item {
     margin: var(--mb-0-5);
-    /* padding: var(--mb-0-5); */
     display: flex;
     justify-content: center;
 }
@@ -117,12 +115,25 @@ img {
 }
 
 
-.navbar__link:hover {
+/* .navbar__link:hover {
     border-bottom: 2px solid #fff;
+} */
+
+.navbar__link::after {
+    display: block;
+    content: "";
+    border-bottom: 2px solid #fff;
+    transform: scaleX(0);
+    margin-top: var(--mb-0-25);
+    transition: transform 250ms;
+}
+
+.navbar__link:hover::after {
+    transform: scaleX(1);
 }
 
 .show__modal {
-    display: block;
+    height: 100%;
 }
 
 .z__index {
@@ -180,6 +191,11 @@ img {
 .btn__icon {
     vertical-align: middle;
     margin-left: var(--mb-0-5);
+    transition: .5s;
+}
+
+.info__button:hover .btn__icon {
+    transform: translateX(5px);
 }
 
 .temp {
@@ -255,4 +271,84 @@ img {
     color: var(--gray-color);
     font-weight: bold;
     text-decoration: underline;
+}
+
+@media screen and (min-width: 769px) {
+
+    .container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        column-gap: 5rem;
+    }
+
+    .header__top {
+        flex-grow: 1;
+    }
+
+
+    .navbar__icon {
+        display: none;
+    }
+
+    .header__modal {
+        height: auto;
+        position: relative;
+        z-index: 0;
+        flex-grow: 1;
+        width: auto;
+
+    }
+
+    .navbar {
+        height: auto;
+        display: block;
+    }
+
+    .navbar__data {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar__item {
+        display: inline-block;
+    }
+
+    .navbar__link {
+        font-size: var(--normal-font-size);
+        font-weight: 500;
+    }
+
+    .navbar__link::after {
+        display: block;
+        content: "";
+        border-bottom: 2px solid #fff;
+        transform: scaleX(0);
+        transition: transform 250ms;
+        margin-top: var(--mb-0-25);
+    }
+
+    .navbar__link:hover {
+        border: none;
+    }
+
+    .navbar__link:hover::after {
+        transform: scaleX(1);
+    }
+
+    
+    .main {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 2rem;
+    }
+
+    .card {
+        max-width: 65%;
+        left:30%;
+    }
 }
