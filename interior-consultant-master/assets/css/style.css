@@ -239,3 +239,20 @@ img {
 .card__info-name {
     display: block;
 }
+
+.footer {
+    margin-top: 7rem;
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    color: var(--footer-color);
+}
+
+.footer__link {
+    font-size: var(--normal-font-size);
+    color: var(--gray-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
