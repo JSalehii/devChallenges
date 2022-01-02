@@ -161,10 +161,11 @@ img {
     font-style: italic;
 }
 
-.ingredients__data {
+.ingredients__data,
+.instructions__data {
     display: grid;
     grid-template-columns: max-content 1fr;
-    align-items: center;
+    align-items: start;
     column-gap: var(--mb-0-5);
     row-gap: var(--mb-0-75);
     font-family: var(--body-font);
@@ -174,5 +175,34 @@ img {
 input[type="checkbox"] {
     width: 16px;
     height: 16px;
+    margin-top: .2rem;
 }
 
+.instructions {
+    padding-top: var(--mb-1-5);
+    margin-bottom: var(--mb-1-5);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--mb-1-5);
+}
+
+.instructions__title {
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: var(--h1-font-size);
+    color: var(--gray-one-color);
+}
+
+.inst__num {
+    width: 32px;
+    height: 32px;
+    background-color: var(--orange-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    font-weight: bold;
+    margin-top: .2rem;
+    border-radius: 5px;
+}
