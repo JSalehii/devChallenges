@@ -172,6 +172,11 @@ img {
     font-size: var(--small-font-size);
 }
 
+.instructions__data {
+    row-gap: var(--mb-1-5);
+    column-gap: var(--mb-1);
+}
+
 input[type="checkbox"] {
     width: 16px;
     height: 16px;
@@ -205,4 +210,34 @@ input[type="checkbox"] {
     font-weight: bold;
     margin-top: .2rem;
     border-radius: 5px;
+}
+
+.inst__info {
+    font-style: normal;
+    font-size: var(--normal-font-size);
+    color: var(--dark-color);
+}
+
+.source__link {
+    font-weight: 400;
+    font-style: italic;
+    font-size: var(--normal-font-size);
+    color: var(--gray-four-color);
+}
+
+.footer {
+    margin-top: 7rem;
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    color: #828282;
+}
+
+.footer__link {
+    font-size: var(--normal-font-size);
+    color: var(--gray-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
