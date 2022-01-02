@@ -180,7 +180,7 @@ img {
 input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    margin-top: .2rem;
+    margin-top: 2px;
 }
 
 .instructions {
@@ -208,7 +208,7 @@ input[type="checkbox"] {
     align-items: center;
     font-size: var(--normal-font-size);
     font-weight: bold;
-    margin-top: .2rem;
+    margin-top: 2px;
     border-radius: 5px;
 }
 
@@ -237,7 +237,17 @@ input[type="checkbox"] {
 
 .footer__link {
     font-size: var(--normal-font-size);
-    color: var(--gray-color);
+    color: var(--gray-two-color);
     font-weight: bold;
     text-decoration: underline;
+}
+
+
+
+/* style for large device */
+
+@media screen and (min-width: 769px) {
+    .container {
+        margin: 2rem 9rem;
+    }
 }
