@@ -271,8 +271,9 @@ input[type="checkbox"] {
     .header__info {
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding: 1rem 2rem;
+        align-items: flex-start;
+        padding: 2rem 3rem;
+        margin:0 auto;
         flex-direction: column;
         grid-column: 3/4;
         height: 50%;
