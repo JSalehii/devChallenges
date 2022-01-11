@@ -38,7 +38,7 @@
 
 ![screenshot](https://github.com/JSalehii/devChallenges/blob/master/404-not-found/screenshot.png)
 
-Hi everyone . this is my first challenge for devchallenges.io . I used the grid to arrange the elements on the page. I also used MediaQuery to respond to the page.
+Hi everybody . this is my first challenge for devchallenges.io . I used the grid to arrange the elements on the page. I also used MediaQuery to respond to the page.
 you can see the demo in [404-not-found](https://404-not-found-jsalehii.netlify.app/)
 
 ### Built With
