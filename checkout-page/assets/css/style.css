@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+:root {
+
+    --primary-font: 'Montserrat', sans-serif;
+
+    --dark-color: #333333;
+    --dark-color-light: #4e5150;
+    --gray-color: #4f4f4f;
+    --gray-color-light: #828282;
+    --footer-color: #bdbdbd; 
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px .... */
+    --big-font-size: 2rem; /* 32 px */
+    --h1-font-size: 1.5rem; /* 24 px */ 
+    --h2-font-size: 1.25rem; /* 20 px */
+    --h3-font-size: 1.125rem; /* 18 px */
+    --normal-font-size: 1rem; /* 16 px */
+    --small-font-size: .813rem; /* 13 px */
+    --smaller-font-size: .5rem; /* 8 px */
+
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    display: grid;
+    row-gap: var(--mb-1-5);
+}
+
