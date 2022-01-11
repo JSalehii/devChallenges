@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://JSalehii.github.io">
+    <a href="https://404-not-found-jsalehii.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/JSalehii/devChallenges/tree/master/404-not-found">
       Solution
     </a>
     <span> | </span>
@@ -27,7 +27,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
 <!-- - [Contact](#contact)
 - [Acknowledgements](#acknowledgements) -->
@@ -36,14 +36,10 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/JSalehii/devChallenges/blob/master/404-not-found/screenshot.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+Hi everyone . this is my first challenge for devchallenges.io . I used the grid to arrange the elements on the page. I also used MediaQuery to respond to the page.
+you can see the demo in [404-not-found](https://404-not-found-jsalehii.netlify.app/)
 
 ### Built With
 
