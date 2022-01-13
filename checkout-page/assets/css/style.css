@@ -47,6 +47,7 @@ img {
     row-gap: var(--mb-1-5);
     margin: 2rem 1.5rem;
     font-family: var(--primary-font);
+    transition: .3s;
 }
 
 .main__title {
@@ -110,7 +111,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
+    max-width: 160px;
     font-size: var(--h2-font-size);
     border: 1px solid #828282;
     border-radius: 12px;
@@ -226,4 +227,16 @@ label {
 
 .footer__link {
     color: #828282;
+}
+
+@media screen and (min-width: 481px) {
+    .main {
+        margin: 5% 10%;
+        transition: .3s;
+    }
+
+    .order__item {
+        grid-template-columns: 30% 70%;
+    }
+
 }
