@@ -122,7 +122,8 @@ img {
     color: var(--gray-color-light);
     background-color: #e0e0e0;
     border-radius: 5px;
-    padding: 0 .2rem;
+    padding: .3rem .4rem;
+    font-size: 1rem;
 }
 
 .order__num {
@@ -140,4 +141,89 @@ img {
     border-top: 1px solid #bdbdbd;
     color: var(--dark-color);
     padding: .6rem 0;
+}
+
+.inputWithIcon {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.inputWithIcon i {
+    position: absolute;
+    left: 5px;
+    top: 25px;
+    padding: 9px 8px;
+    color: var(--gray-color-light);
+}
+
+input {
+    padding: 10px;
+    padding-left: 40px;
+    margin-top: .3rem;
+    border: 1px solid #828282;
+    width: 100%;
+    border-radius: 12px;
+    color: var(--gray-color-light);
+}
+
+.contact__title {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+    font-size: var(--normal-font-size);
+}
+
+label {
+    color: var(--gray-color);
+    font-size: var(--small-font-size);
+}
+
+
+.left input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+    padding: 2px 4px;
+    background: #e0e0e0;
+    border-radius: 5px;
+ }
+
+
+.twoColumn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--mb-1-5);
+    justify-content: space-between;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom;
+    color: var(--gray-color-light);
+}
+
+.btn__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--mb-1-5);
+    margin-top: var(--mb-1-5);
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    grid-column: 2 / 3;
+    color: #fff;
+    background-color: var(--orange-color);
+    border: none;
+    font-size: var(--normal-font-size);
+}
+
+.footer {
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--small-font-size);
+    color: var(--footer-color);
+}
+
+.footer__link {
+    color: #828282;
 }
