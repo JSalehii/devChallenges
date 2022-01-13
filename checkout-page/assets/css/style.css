@@ -111,7 +111,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: 160px;
+    width: max-content;
     font-size: var(--h2-font-size);
     border: 1px solid #828282;
     border-radius: 12px;
@@ -124,11 +124,13 @@ img {
     background-color: #e0e0e0;
     border-radius: 5px;
     padding: .3rem .4rem;
+    margin: 0 1rem;
     font-size: 1rem;
 }
 
 .order__num {
     color: var(--dark-color);
+    margin: 0 .5rem;
 }
 
 .order__sum {
@@ -223,6 +225,7 @@ label {
     font-weight: 700;
     font-size: var(--small-font-size);
     color: var(--footer-color);
+    margin-top: 4rem;
 }
 
 .footer__link {
@@ -240,3 +243,37 @@ label {
     }
 
 }
+
+@media screen and (min-width: 769px) {
+    .main {
+        margin: 2rem 6rem;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: var(--mb-2);
+        row-gap: var(--mb-2-5);
+        transition: .3s;
+    }
+
+    .main__title {
+        grid-column: 1 / 3;
+        font-size: 2rem;
+    }
+
+    .order {
+        grid-column: 2 / 3;
+        height: max-content;
+    }
+
+    .container {
+        grid-row: 2 / 3;
+    }
+
+    .contact__title {
+        margin-top: 0;
+    }
+
+    .footer {
+        grid-column: 1 / 3;
+        margin-top: 4rem;
+    }
+}
+
