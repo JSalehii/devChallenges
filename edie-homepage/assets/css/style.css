@@ -151,7 +151,7 @@ ul {
 .main {
     display: flex;
     flex-direction: column;
-    row-gap: var(--mb-2);
+    row-gap: var(--mb-3);
 }
 
 .home {
@@ -229,5 +229,73 @@ ul {
     color: var(--gray-four-color);
     font-size: 14px;
     font-weight: 500;
+}
+
+/************************** services *********************************/
+
+.service {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.service__title {
+    font-weight: 500;
+    font-size: var(--h1-font-size);
+    color: var(--gray-one-color);
+    padding: 0 2rem;
+
+}
+
+.service__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--mb-1-5);
+    padding: 2rem;
+    
+
+}
+
+.service__card:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+}
+
+.service__icon {
+    padding: 20px;
+    width: max-content;
+    background-color: var(--blue-color);
+    color: var(--light-color);
+    font-size: 22px;
+    border-radius: 16px;
+}
+
+.service__subtitle {
+    font-size: var(--h1-font-size);
+    color: var(--gray-one-color);
+}
+
+.service__des {
+    color: var(--gray-two-color);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+}
+
+.service__btn {
+    width: max-content;
+    padding: 10px 12px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    color: var(--gray-three-color);
+    cursor: pointer;
+}
+
+.service__btn:hover {
+    background-color: #bdbdbd;
+    color: var(--gray-two-color);
+}
+
+.green {
+    background-color: #27ae60;
 }
 
