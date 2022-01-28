@@ -28,7 +28,7 @@
             </header>
 
             <main class="main">
-                <div class="home">
+                <div class="home" id="home">
                     <div class="home__info">
                         <h5 class="home__subtitle">Unhappy with your website?</h5>
                         <h1 class="home__title">We create beautiful<br> and fast web services</h1>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <div class="service">
+                <div class="service" id="service">
                     <h2 class="service__title">We offer high<br> demand services</h2>
 
                     <div class="service__card">
@@ -74,9 +74,8 @@
                     </div>
                 </div>
 
-                <div class="works">
+                <div class="works" id="works">
                     <h2 class="works__title">Good design means<br> good business</h2>
-
 
                     <div class="works__card">
                         <img class="works__img" src="./assets/img/smarthome.jpg">
@@ -108,7 +107,7 @@
                     </div>
                 </div>
 
-                <div class="clients">
+                <div class="clients" id="clients">
                     <div class="clients__container">
                         <h3 class="clients__subtitle">Meet the team</h3>
                         <h2 class="clients__title">We are chilled<br>and a laidback<br>team</h2>
@@ -132,6 +131,36 @@
                 </div>
             </main>
         </div>
+        <footer class="footer" id="contact">
+            <div class="footer__links">
+                <ul class="footer__navbar">
+                    <li class="footer__item"><a class="footer__link" href="#home">Home</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#service">Services</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#works">Our Works</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#clients">Clients</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <a href="#" class="brand">Edie</a>
+                <div class="social__img-container">
+                    <img src="./assets/img/instagram.svg" class="social__img">
+                    <img src="./assets/img/linkedin.svg" class="social__img">
+                    <img src="./assets/img/twitter.svg" class="social__img">
+                </div>
+            </div>
+
+            <div class="home__contact">
+                <h5 class="home__contact-title">Want us to contact you?</h5>
+                <form class="form1">
+                    <input type="email" class="home__email" id="home-email" placeholder="Email">
+                    <input type="submit" class="email__btn" id="email__btn" value="Join">
+                </form>
+            </div>
+
+            <p class="footer__des">created by <a href="https://github.com/JSalehii" class="footer__author">JSalehii</a> - devChallenges.io</p>
+        </footer>
 
         <script src="./assets/js/script.js"></script>
     </body>
