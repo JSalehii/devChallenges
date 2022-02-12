@@ -25,3 +25,4 @@ links.forEach((item) => {
         navModal.classList.remove("show__menu");
     })
 });
+

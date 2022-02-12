@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
         <title>Edie Homepage</title>
     </head>
     <body>
@@ -16,12 +21,44 @@
                     <i class="fas fa-bars nav__icon" id="nav-icon"></i>
                     <div class="navbar" id="navbar">
                         <ul class="navbar__data">
-                            <li class="navbar__item"><a class="navbar__link" href="#home">Home</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#services">Services</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#Home">Our Works</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#Home">Clients</a></li>
-                            <li class="navbar__item"><a class="navbar__link" href="#Home">Contact</a></li>
-                            <i class="fas fa-times nav__close" id="nav-close"></i>
+                            <li class="navbar__item">
+                                <a class="navbar__link" id="links" href="#home"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a
+                                    class="navbar__link"
+                                    id="links"
+                                    href="#service"
+                                    >Services</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a class="navbar__link" id="links" href="#works"
+                                    >Our Works</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a
+                                    class="navbar__link"
+                                    id="links"
+                                    href="#clients"
+                                    >Clients</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a
+                                    class="navbar__link"
+                                    id="links"
+                                    href="#contact"
+                                    >Contact</a
+                                >
+                            </li>
+                            <i
+                                class="fas fa-times nav__close"
+                                id="nav-close"
+                            ></i>
                         </ul>
                     </div>
                 </nav>
@@ -30,101 +67,181 @@
             <main class="main">
                 <div class="home" id="home">
                     <div class="home__info">
-                        <h5 class="home__subtitle">Unhappy with your website?</h5>
-                        <h1 class="home__title">We create beautiful<br> and fast web services</h1>
+                        <h5 class="home__subtitle">
+                            Unhappy with your website?
+                        </h5>
+                        <h1 class="home__title">
+                            We create beautiful<br />
+                            and fast web services
+                        </h1>
                     </div>
-                    <img src="./assets/img/heroImage.jpg" class="hero__img">
+                    <img src="./assets/img/heroImage.jpg" class="hero__img" />
                     <div class="home__column">
                         <div class="home__info">
-                            <h1 class="home__title">Story, emotion<br> and purpose</h1>
-                            <p class="home__description">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+                            <h1 class="home__title">
+                                Story, emotion<br />
+                                and purpose
+                            </h1>
+                            <p class="home__description">
+                                We help transform your ideas into real world
+                                applications that will outperform your toughest
+                                competition and help you achieve your strategic
+                                goals in short period of time.
+                            </p>
                         </div>
                         <div class="home__contact">
-                            <h5 class="home__contact-title">Want us to contact you?</h5>
+                            <h5 class="home__contact-title">
+                                Want us to contact you?
+                            </h5>
                             <form class="form1">
-                                <input type="email" class="home__email" id="home-email" placeholder="Email">
-                                <input type="submit" class="email__btn" id="email__btn" value="Join">
+                                <input
+                                    type="email"
+                                    class="home__email"
+                                    id="home-email"
+                                    placeholder="Email"
+                                />
+                                <input
+                                    type="submit"
+                                    class="email__btn"
+                                    id="email__btn"
+                                    value="Join"
+                                />
                             </form>
                         </div>
                     </div>
                 </div>
 
                 <div class="service" id="service">
-                    <h2 class="service__title">We offer high<br> demand services</h2>
+                    <h2 class="service__title">
+                        We offer high<br />
+                        demand services
+                    </h2>
 
                     <div class="service__card">
                         <i class="fas fa-pen service__icon"></i>
                         <h3 class="service__subtitle">UI/UX Design</h3>
-                        <p class="service__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <p class="service__des">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Duis a metus ac nulla consequat aliquet id
+                            quis turpis.
+                        </p>
                         <a class="service__btn">Get Started</a>
                     </div>
 
                     <div class="service__card">
                         <i class="fas fa-code service__icon green"></i>
                         <h3 class="service__subtitle">Front End</h3>
-                        <p class="service__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <p class="service__des">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Duis a metus ac nulla consequat aliquet id
+                            quis turpis.
+                        </p>
                         <a class="service__btn">Get Started</a>
                     </div>
 
                     <div class="service__card">
                         <i class="fas fa-list service__icon"></i>
                         <h3 class="service__subtitle">UI/UX Design</h3>
-                        <p class="service__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <p class="service__des">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Duis a metus ac nulla consequat aliquet id
+                            quis turpis.
+                        </p>
                         <a class="service__btn">Get Started</a>
                     </div>
                 </div>
 
                 <div class="works" id="works">
-                    <h2 class="works__title">Good design means<br> good business</h2>
+                    <h2 class="works__title">
+                        Good design means<br />
+                        good business
+                    </h2>
 
-                    <div class="works__card">
-                        <img class="works__img" src="./assets/img/smarthome.jpg">
+                    <div class="works__card bottom">
+                        <img
+                            class="works__img"
+                            src="./assets/img/smarthome.jpg"
+                        />
                         <h5 class="works__subtitle">Full stack application</h5>
                         <p class="works__des">Smart home dashboard</p>
                     </div>
 
                     <div class="works__card">
-                        <img class="works__img" src="./assets/img/onboard.png">
+                        <img
+                            class="works__img"
+                            src="./assets/img/onboard.png"
+                        />
                         <h5 class="works__subtitle">UX/UI design</h5>
                         <p class="works__des">Onboard application</p>
                     </div>
 
-                    <div class="works__card">
-                        <img class="works__img" src="./assets/img/booking.png">
+                    <div class="works__card bottom">
+                        <img
+                            class="works__img"
+                            src="./assets/img/booking.png"
+                        />
                         <h5 class="works__subtitle">Mobile application</h5>
                         <p class="works__des">Booking system</p>
                     </div>
-                    
+
                     <div class="works__card">
-                        <img class="works__img" src="./assets/img/juice-product.png">
+                        <img
+                            class="works__img"
+                            src="./assets/img/juice-product.png"
+                        />
                         <h5 class="works__subtitle">Front End application</h5>
                         <p class="works__des">Juice product homepage</p>
                     </div>
 
                     <div class="works__btn">
                         <a class="works__link" href="#">see more</a>
-                        <i class="fas fa-long-arrow-alt-right works__btn-arrow"></i>
+                        <i
+                            class="fas fa-long-arrow-alt-right works__btn-arrow"
+                        ></i>
                     </div>
                 </div>
 
                 <div class="clients" id="clients">
                     <div class="clients__container">
                         <h3 class="clients__subtitle">Meet the team</h3>
-                        <h2 class="clients__title">We are chilled<br>and a laidback<br>team</h2>
-                        <p class="clients__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h2 class="clients__title">
+                            We are chilled<br />and a laidback<br />team
+                        </h2>
+                        <p class="clients__des">
+                            Lorem ipsum dolor sit amet,<br> consectetur adipiscing
+                            elit.
+                        </p>
                     </div>
                     <div class="clients__img-container">
-                        <img class="clients__img first" src="./assets/img/person3.png">
-                        <img class="clients__img" src="./assets/img/person1.png">
-                        <img class="clients__img" src="./assets/img/person2.png">
+                        <img
+                            class="clients__img first"
+                            src="./assets/img/person3.png"
+                        />
+                        <img
+                            class="clients__img"
+                            src="./assets/img/person1.png"
+                        />
+                        <img
+                            class="clients__img"
+                            src="./assets/img/person2.png"
+                        />
                     </div>
                     <div class="clients__data">
-                        <q class="clients__quote">Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.</q>
+                        <q class="clients__quote"
+                            >Fast and outstanding resutls. Edie understands
+                            their customer’s needs. They have a young and
+                            talented team.</q
+                        >
                         <div class="clients__info">
-                            <img class="clients__thum" src="./assets/img/person4.png">
+                            <img
+                                class="clients__thum"
+                                src="./assets/img/person4.png"
+                            />
                             <div class="clients__content">
                                 <h2 class="clients__name">Carlos Tran</h2>
-                                <h3 class="clients__job">The Decorate Gatsby</h3>
+                                <h3 class="clients__job">
+                                    The Decorate Gatsby
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -134,32 +251,58 @@
         <footer class="footer" id="contact">
             <div class="footer__links">
                 <ul class="footer__navbar">
-                    <li class="footer__item"><a class="footer__link" href="#home">Home</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#service">Services</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#works">Our Works</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#clients">Clients</a></li>
-                    <li class="footer__item"><a class="footer__link" href="#contact">Contact</a></li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#home">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#service">Services</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#works">Our Works</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#clients">Clients</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="social">
                 <a href="#" class="brand">Edie</a>
                 <div class="social__img-container">
-                    <img src="./assets/img/instagram.svg" class="social__img">
-                    <img src="./assets/img/linkedin.svg" class="social__img">
-                    <img src="./assets/img/twitter.svg" class="social__img">
+                    <img src="./assets/img/instagram.svg" class="social__img" />
+                    <img src="./assets/img/linkedin.svg" class="social__img" />
+                    <img src="./assets/img/twitter.svg" class="social__img" />
                 </div>
             </div>
 
             <div class="home__contact">
                 <h5 class="home__contact-title">Want us to contact you?</h5>
                 <form class="form1">
-                    <input type="email" class="home__email" id="home-email" placeholder="Email">
-                    <input type="submit" class="email__btn" id="email__btn" value="Join">
+                    <input
+                        type="email"
+                        class="home__email"
+                        id="home-email"
+                        placeholder="Email"
+                    />
+                    <input
+                        type="submit"
+                        class="email__btn"
+                        id="email__btn"
+                        value="Join"
+                    />
                 </form>
             </div>
 
-            <p class="footer__des">created by <a href="https://github.com/JSalehii" class="footer__author">JSalehii</a> - devChallenges.io</p>
+            <p class="footer__des">
+                created by
+                <a href="https://github.com/JSalehii" class="footer__author"
+                    >JSalehii</a
+                >
+                - devChallenges.io
+            </p>
         </footer>
 
         <script src="./assets/js/script.js"></script>
