@@ -113,12 +113,13 @@ ul {
     align-items: center;
     z-index: var(--z-modal);
     background-color: var(--dark-color);
-    transition: .3s;
 }
 
 .show__menu {
     left: 0;
+    transition: .3s;
 }
+
 
 .navbar__data {
     display: flex;
@@ -513,3 +514,118 @@ ul {
     text-decoration: underline;
 }
 
+@media screen and (min-width: 481px) {
+    .container {
+        margin: 1.5rem 4rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav__icon, .nav__close {
+        display: none !important;
+    }
+
+    .navbar {
+        position: relative;
+        left: 0;
+        background-color: inherit;
+    }
+
+    .navbar__data {
+        flex-direction: row;
+        column-gap: var(--mb-2);
+    }
+
+    .navbar__link {
+        color: var(--dark-color);
+        font-weight: 500;
+        /* font-size: var(--h3-font-size); */
+    }
+
+    .navbar__link::after {
+        border-bottom-color: var(--dark-color);
+    }
+
+    .brand {
+        font-size: var(--big-font-size);
+    }
+
+    .home > div {
+        margin : 0 7rem;
+    }
+
+    .home__column {
+        width: 40%;
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        
+    }
+
+    .service__title {
+        grid-column: span 3;
+        font-size: var(--big-font-size);
+    }
+
+    .works {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* row-gap: 7rem; */
+    }
+
+    .works__title {
+        grid-column: span 2;
+        font-size: var(--big-font-size);
+    }
+
+    .works__card {
+        margin-bottom: 5rem;
+    }
+
+    .works__btn {
+        grid-column: span 2;
+        justify-self: end;
+        margin-right: 2rem;
+    }
+
+    .bottom {
+        transform: translateY(140px);
+    }
+
+    .clients {
+        margin-top: 6rem;
+        column-gap: 2rem;
+        grid-template-columns: 40% 60%;
+    }
+
+    .clients__container {
+        align-self: center;
+    }
+
+    .clients__img-container {
+        column-gap: var(--mb-0-5);
+        row-gap: var(--mb-0-75);
+    }
+
+    .clients__data {
+        grid-column: span 2;
+        margin-right: 30%;
+    }
+
+    .footer {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 30% 30% 40%;
+    }
+
+    .footer__des {
+        grid-column: span 3;
+    }
+
+    .home__contact-title {
+        color: #f2f2f2;
+    }
+
+}
