@@ -60,8 +60,13 @@ ul {
 }
 
 .container {
-    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    display: grid;
+    row-gap: var(--mb-2);
+    background-color: #F0F2F3;
 }
+
+/*============================ header =================================*/
 
 .header {
     display: flex;
@@ -95,6 +100,7 @@ ul {
 
 .hide {
     bottom: 100%;
+    top: -100%;
 }
 
 .nav__link {
@@ -103,4 +109,60 @@ ul {
 
 .z-index {
     z-index: 100;
+}
+
+/*============================ main =================================*/
+
+.main {
+    display: grid;
+}
+
+/*============================ about =================================*/
+
+.about {
+    display: grid;
+    row-gap: var(--mb-1);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.about__img {
+    width: 100%;
+    height: 270px;
+    border-radius: 12px;
+    /* justify-self: center; */
+    object-fit: cover;
+}
+
+.aboutName__title {
+    font-weight: 600;
+    font-size: var(--h1-font-size);
+    color: var(--gray-two-color);
+    margin-bottom: var(--mb-0-5);
+}
+
+.aboutName__subtitle {
+    font-weight: 500;
+    font-size: var(--h3-font-size);
+    color: var(--gray-three-color);
+}
+
+.aboutContact {
+    display: grid;
+    row-gap: var(--mb-0-5);
+}
+
+.aboutContact > div {
+    display: flex;
+    column-gap: var(--mb-0-5);
+    align-items: center;
+    color: var(--gray-two-color);
+    font-size: var(--normall-font-size);
+}
+
+.aboutDes {
+    font-weight: 500;
+    font-size: var(--normal-font-size);
+    color: var(--gray-three-color);
 }
