@@ -343,7 +343,7 @@ ul {
 
 .exp__item {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% auto;
     column-gap: var(--mb-1-5);
 }
 
