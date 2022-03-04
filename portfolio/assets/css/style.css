@@ -77,6 +77,11 @@ ul {
     cursor: pointer;
 }
 
+.brand {
+    padding: 5px 10px;
+    border: 1px solid #828282;
+}
+
 .nav {
     position: absolute;
     top: 0;
@@ -105,6 +110,10 @@ ul {
 
 .nav__link {
     color: var(--light-color);
+}
+
+.nav__link:hover {
+    border-bottom: 1px solid #fff;
 }
 
 .z-index {
@@ -490,6 +499,7 @@ ul {
     padding: 10px 14px;
     border: 1px solid var(--gray-two-color);
     border-radius: 6px;
+    color: var(--gray-two-color);
 }
 
 .pagination .border__none {
@@ -500,4 +510,19 @@ ul {
     background: #2f50ed;
     color: #fff;
     border: none;
+}
+
+/*============================ footer =================================*/
+
+.footer {
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: 500;
+    color: var(--gray-three-color);
+    font-size: 14px;
+}
+
+.footer a {
+    color: var(--gray-three-color);
+    font-weight: 700;
 }
