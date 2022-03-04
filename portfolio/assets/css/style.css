@@ -526,3 +526,85 @@ ul {
     color: var(--gray-three-color);
     font-weight: 700;
 }
+
+/*============================ small devices (landscape phones, 576px and up) =================================*/
+
+@media screen and (min-width: 576px) {
+    .container {
+        padding: 1rem 4rem;
+    }
+
+}
+
+/*============================ medium devices (tablets, 768px and up) =================================*/
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 1rem 6rem;
+    }
+
+    .filter {
+        align-items: flex-start;
+    }
+
+    .project__button {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: var(--mb-1);
+    }
+
+    .btn {
+        width: 30%;
+    }
+}
+
+/*============================ large devices (desktop, 992px and up) =================================*/
+
+@media screen and (min-width: 992px) {
+    .nav {
+        position: static;
+        background-color: transparent;
+        transition: none;
+    }
+
+    .nav__items {
+        flex-direction: row;
+        column-gap: var(--mb-1);
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__link {
+        color: var(--gray-one-color);
+        font-size: 18px;
+    }
+
+    .nav__link:hover {
+        border-bottom: none;
+        color: #2f50ed;
+    }
+
+    .section__center {
+        grid-template-columns: auto auto;
+        column-gap: var(--mb-1-5);
+    }
+
+    .section__center section {
+        display: grid;
+    }
+
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: var(--mb-1);
+    }
+
+    .pagination {
+        justify-content: end;
+    }
+
+    .btn {
+        width: auto;
+    }
+}
